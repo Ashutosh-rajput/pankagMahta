@@ -19,7 +19,7 @@ async function submitData() {
             throw new Error("Invalid JSON: 'data' key is required");
         }
 
-        const response = await fetch("http://localhost:8080/bfhl", { // Change URL if deployed
+        const response = await fetch("https://pankajmehta.onrender.com/bfhl", { // Change URL if deployed
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(parsedJson),
