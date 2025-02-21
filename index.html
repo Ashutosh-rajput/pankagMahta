@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BFHL Challenge</title>
+</head>
+<body>
+    <h2>Enter JSON Input</h2>
+    <textarea id="jsonInput" rows="5" cols="50"></textarea><br>
+    <button onclick="submitData()">Submit</button>
+    <p id="errorMessage" style="color: red;"></p>
+
+    <div id="responseBox" style="display: none;">
+        <h3>Response:</h3>
+        <pre id="responseData"></pre>
+
+        <h3>Filter Response:</h3>
+        <select id="filterOptions" multiple style="display: none;">
+            <option value="alphabets">Alphabets</option>
+            <option value="numbers">Numbers</option>
+            <option value="highest_alphabet">Highest Alphabet</option>
+        </select>
+        <button id="filterButton" onclick="filterResponse()" style="display: none;">Filter</button>
+    </div>
+
+    <script src="script.js"></script>  <!-- Correctly linked JS file -->
+</body>
+</html>
